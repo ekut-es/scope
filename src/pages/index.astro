@@ -21,8 +21,12 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <Hero
-  image={{ src: '~/assets/images/scope_bright_small.png', alt: 'scope-logo', width:'1284', height:'295'}}
-  ></Hero>
+  image={{ src: '~/assets/images/scope_dark_small.png', alt: 'scope-logo', width:'1284', height:'295'}}
+  >
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-gray-500"></div>
+  </Fragment>
+</Hero>
 
   <Hero
     
@@ -249,7 +253,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-gray-500 dark:bg-gray-500"></div>
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 

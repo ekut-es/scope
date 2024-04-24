@@ -21,18 +21,18 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <Hero
-    image={{ src: '~/assets/images/scope_bright.png', alt: 'scope-logo' , heigth: '2953', width: '12837'}}
+  image={{ src: '~/assets/images/scope_bright.png', alt: 'scope-logo' , heigth: '460', width: '2000'}}
     actions={[
       {
         variant: 'primary',
-        text: 'Get Dataset',
+        text: 'Dataset',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
       },
       {
         variant: 'primary',
-        text: 'Get Toolkit',
+        text: 'Toolkit',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:tool',
@@ -165,34 +165,34 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'RGB Cameras',
+        title: 'Diverse scenarios',
         description:
-          'Five RGB cameras to provide stereo images as well as a 360° surround view with a resolution of 1920x1080 px',
-          icon: 'tabler:camera',
+          'SCOPE includes over 40 diverse scenarios including urban, suburban, rural and highway environments',
+          icon: 'tabler:road',
       },
       {
-        title: 'Semantic Segmentation Cameras',
+        title: 'Two Novel Maps',
         description:
-          '5 semantic segmentation with same specificataion as RGB cameras',
-          icon: 'tabler:photo-filled',
+          'Two novel maps from Karlsruhe and Tübingen (Germany), providing a realistic driving environment',
+          icon: 'tabler:map',
       },
       {
-        title: '32 and 64-layer 360° LiDARs',
+        title: 'Diverse Road Users',
         description:
-          'Realistic LiDAR sensor model imitating the Velodyne VLP32 and HDL64',
-          icon: 'tabler:360-view',
+          'SCOPE is the only dataset including not only cars and vans but also motorcyclists, cyclists and pedestrians',
+          icon: 'tabler:bike',
       },
       {
-        title: 'Solid State LiDAR',
+        title: 'Edge Case Scenarios',
         description:
-          'SCOPE is the first dataset that integrates a solid state LiDAR. We use a Blickfeld CUBE model.',
-          icon: 'tabler:3d-cube-sphere',
+          'Edge cases like roundabouts and tunnel sections are part of SCOPE',
+          icon: 'tabler:arrow-roundabout-left',
       },
     ]}
     image={{
-      src: '~/assets/images/SensorSetup.jpg',
-      alt: 'Colorful Image',
-      heigth: '2179', width: '3414'
+      src: '~/assets/images/Cities_scenarios.png',
+      alt: 'scenarios',
+      
     }}
   >
     <Fragment slot="content">

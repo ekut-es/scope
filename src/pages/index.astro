@@ -20,10 +20,6 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-  <Hero
-  image={{ src: '~/assets/images/scope_bright.png', alt: 'scope-logo', width:'2500', height:'500'}}
-  ></Hero>
-
   <Content
   image={{ src: '~/assets/images/scope_bright.png', alt: 'scope-logo', width:'2500', height:'500'}}
   ></Content>
@@ -55,12 +51,12 @@ const metadata = {
       
     ]}
   >
-    <Fragment slot="title">
+    <!-- <Fragment slot="title">
       SCOPE <span class="hidden xl:inline">Dataset</span>
-    </Fragment>
+    </Fragment>-->
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
+    <Fragment slot="title">
+      <span class="hidden xl:inline">
         <span class="font-semibold"></span> A Synthetic Multi-Modal Dataset for Collective Perception Including Physical-Correct Weather Conditions
         </span
       >
@@ -151,7 +147,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/SensorSetup.jpg',
+      src: '~/assets/images/SensorSetup_rotated.jpg',
       alt: 'Colorful Image',
       heigth: '2179', width: '3414'
     }}
@@ -208,75 +204,44 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
   <Content
     isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
     isReversed
-    isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Times of Day',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'SCOPE different times of day including night time which affects camera-based object detection',
+          icon: 'tabler:moon',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Weather Conditions',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Three varying intensities for rain and fog',
+          icon: 'tabler:cloud-rain',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Image Augmentation',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Realistic and physically-accurate rendering of falling rain, raindrops on windshield and fog for image data',
+          icon: 'tabler:camera',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Point Cloud Augmentation',
+        description:
+          'Realistic models to augment point clouds to achieve weather-affected LiDAR data',
+          icon: 'tabler:360-view',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: '~/assets/images/Cities_scenarios.png',
+      alt: 'scenarios',
+      
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Environmental Conditions</h3>
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -403,24 +368,24 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'How many frames does SCOPE consist of?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "SCOPE contains of 44 scenarios with four environmental conditions each, and a scenario length of 100 frames. This results in a total of 17,600 frames.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'What collaborative agents exist?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'For collaborative agents road-side units (RSUs) and connected and automated vehicles (CAVs) are present.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'How many sensors/vehicles are present in the dataset?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "The scenarios contain up to 24 collaborative agents (20 CAVs + 4 RSUs) and up to 60 further vehicles as passive traffic.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: "Who created SCOPE?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "SCOPE was created by Jörg Gamerdinger and Sven Teufel (PhD students @ University of Tübingen), assistent by Stephan Amann, Jan-Patrick Kirchner and Süleyman Simsek (Undergraduate students). The work was supervised by Prof. Oliver Bringmann (Head of Embedded Systems Group)",
       },
       {
         title: 'What is something that you would like to try again?',

@@ -25,7 +25,8 @@ const whenExternalScripts = (items = []) =>
     : [];
 
 export default defineConfig({
-  output: 'static',
+  site: 'https://ekut-es.github.io',
+  base: 'scope.github.io',
 
   integrations: [
     tailwind({

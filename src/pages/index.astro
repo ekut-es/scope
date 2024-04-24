@@ -11,17 +11,18 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Image from '~/components/common/Image.astro';
-import SCOPE_logo from '~/assets/images/scope_bright.png';
 
 const metadata = {
   title: 'Scope Dataset',
   ignoreTitleTemplate: true,
 };
 ---
-<Image src={SCOPE_logo} alt="Italian Trulli"/>
+
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
+  <Hero
+  image={{ src: '~/assets/images/scope_bright.png', alt: 'scope-logo', width:'2500', height:'500'}}
+  ></Hero>
   <Hero
     
     actions={[

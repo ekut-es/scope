@@ -11,13 +11,14 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Image } from 'astro:assets';
 
 const metadata = {
   title: 'Scope Dataset',
   ignoreTitleTemplate: true,
 };
 ---
-<img src="~/assets/images/scope_bright.png" alt="Italian Trulli">
+<Image src="~/assets/images/scope_bright.png" alt="Italian Trulli"/>
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <Hero

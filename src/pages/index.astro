@@ -52,7 +52,7 @@ const metadata = {
 
   <Note />
 
-  <!-- Features Widget *************** -->
+  <!-- Features Widget ***************
 
   <Features
     id="features"
@@ -97,40 +97,44 @@ const metadata = {
         icon: 'tabler:bulb',
       },
     ]}
-  />
+  /-->
 
   <!-- Content Widget **************** -->
 
   <Content
     id="content"
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline=""
+    title="SCOPE: The most comprehensive collective perception dataset out there!!! "
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'RGB Cameras',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Five RGB cameras to provide stereo images as well as a 360° surround view with a resolution of 1920x1080 px',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Semantic Segmentation Cameras',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          '5 semantic segmentation with same specificataion as RGB cameras',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: '32 and 64-layer 360° LiDARs',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Realistic LiDAR sensor model imitating the Velodyne VLP32 and HDL64',
+      },
+      {
+        title: 'Solid State LiDAR',
+        description:
+          'SCOPE is the first dataset that integrates a solid state LiDAR. We use a Blickfeld CUBE model.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/SensorSetup.png',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-       Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sensor Suite</h3>
     </Fragment>
 
     <Fragment slot="bg">

@@ -20,17 +20,31 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
+  image={{ src: '~/assets/images/scope_bright.png', alt: 'scope-logo' , heigth: '2953', width: '12837'}}
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Get Dataset',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      {
+        variant: 'primary',
+        text: 'Get Toolkit',
+        href: 'https://github.com/onwidget/astrowind',
+        target: '_blank',
+        icon: 'tabler:tool',
+      },
+      {
+        variant: 'primary',
+        text: 'Paper',
+        href: 'https://github.com/onwidget/astrowind',
+        target: '_blank',
+        icon: 'tabler:file-text',
+      },
+      
     ]}
     image={{ src: '~/assets/images/Cities2.png', alt: 'Scope Cities' , heigth: '1500', width: '2000'}}
   >
@@ -111,30 +125,78 @@ const metadata = {
         title: 'RGB Cameras',
         description:
           'Five RGB cameras to provide stereo images as well as a 360° surround view with a resolution of 1920x1080 px',
+          icon: 'tabler:camera',
       },
       {
         title: 'Semantic Segmentation Cameras',
         description:
           '5 semantic segmentation with same specificataion as RGB cameras',
+          icon: 'tabler:photo-filled',
       },
       {
         title: '32 and 64-layer 360° LiDARs',
         description:
           'Realistic LiDAR sensor model imitating the Velodyne VLP32 and HDL64',
+          icon: 'tabler:360-view',
       },
       {
         title: 'Solid State LiDAR',
         description:
           'SCOPE is the first dataset that integrates a solid state LiDAR. We use a Blickfeld CUBE model.',
+          icon: 'tabler:3d-cube-sphere',
       },
     ]}
     image={{
-      src: '~/assets/images/SensorSetup.png',
+      src: '~/assets/images/SensorSetup.jpg',
       alt: 'Colorful Image',
+      heigth: '2179', width: '3414'
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sensor Suite</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'RGB Cameras',
+        description:
+          'Five RGB cameras to provide stereo images as well as a 360° surround view with a resolution of 1920x1080 px',
+          icon: 'tabler:camera',
+      },
+      {
+        title: 'Semantic Segmentation Cameras',
+        description:
+          '5 semantic segmentation with same specificataion as RGB cameras',
+          icon: 'tabler:photo-filled',
+      },
+      {
+        title: '32 and 64-layer 360° LiDARs',
+        description:
+          'Realistic LiDAR sensor model imitating the Velodyne VLP32 and HDL64',
+          icon: 'tabler:360-view',
+      },
+      {
+        title: 'Solid State LiDAR',
+        description:
+          'SCOPE is the first dataset that integrates a solid state LiDAR. We use a Blickfeld CUBE model.',
+          icon: 'tabler:3d-cube-sphere',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/SensorSetup.jpg',
+      alt: 'Colorful Image',
+      heigth: '2179', width: '3414'
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Scenarios</h3>
     </Fragment>
 
     <Fragment slot="bg">

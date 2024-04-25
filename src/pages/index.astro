@@ -218,27 +218,27 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Times of Day',
+        title: 'Seperate Environmental Conditions',
         description:
-          'SCOPE different times of day including night time which affects camera-based object detection',
-          icon: 'tabler:moon',
-      },
-      {
-        title: 'Weather Conditions',
-        description:
-          'Three varying intensities for rain and fog',
-          icon: 'tabler:cloud-rain',
-      },
-      {
-        title: 'Image Augmentation',
-        description:
-          'Realistic and physically-accurate rendering of falling rain, raindrops on windshield and fog for image data',
+          'Weather conditions are given seperately to allow for an independent evaluation',
           icon: 'tabler:camera',
       },
       {
-        title: 'Point Cloud Augmentation',
+        title: 'Data Hierarchy',
         description:
-          'Realistic models to augment point clouds to achieve weather-affected LiDAR data',
+          'SCOPE is hierarchically structured with sensor data per vehicle per scenario',
+          icon: 'tabler:moon',
+      },
+      {
+        title: 'Coordinate Transforms',
+        description:
+          'Easy Coordinate Transformation with already given transformation matrices for each vehicle',
+          icon: 'tabler:cloud-rain',
+      },
+      {
+        title: 'File Formats',
+        description:
+          'Common formats as .bin, .txt, and .png for easy and efficient data loading',
           icon: 'tabler:360-view',
       },
     ]}
@@ -262,28 +262,34 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'Times of Day',
+        title: 'Installation',
         description:
-          'SCOPE different times of day including night time which affects camera-based object detection',
-          icon: 'tabler:moon',
+          'Super easy toolkit installation, just run: pip install scope-toolkit',
+          icon: 'tabler:settings',
       },
       {
-        title: 'Weather Conditions',
+        title: 'Download',
         description:
-          'Three varying intensities for rain and fog',
-          icon: 'tabler:cloud-rain',
+          'Efficient parallel downloading and extraction into the correct structure',
+          icon: 'tabler:download',
       },
       {
-        title: 'Image Augmentation',
+        title: 'Visualization',
         description:
-          'Realistic and physically-accurate rendering of falling rain, raindrops on windshield and fog for image data',
-          icon: 'tabler:camera',
+          'The visualization module allows for an easy exploration of the dataset',
+          icon: 'tabler:photo',
       },
       {
-        title: 'Point Cloud Augmentation',
+        title: 'Data Loading',
         description:
-          'Realistic models to augment point clouds to achieve weather-affected LiDAR data',
-          icon: 'tabler:360-view',
+          'Provided dataset class for efficient training and testing in pytorch',
+          icon: 'tabler:rotate-clockwise-2',
+      },
+      {
+        title: 'Evaluation',
+        description:
+          'Provided evaluation for easy and fair comparison of different methods',
+          icon: 'rectangular-prism',
       },
     ]}
     image={{

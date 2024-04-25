@@ -7,15 +7,23 @@ export const headerData = {
       href: '#',
     },
     {
-      text: 'Features',
-      href: getPermalink('/#features')
+      text: 'Scenarios',
+      href: getPermalink('/#scenarios')
     },
     {
-      text: 'Content',
-      href: getPermalink('/#content'),
+      text: 'Environmental Conditions',
+      href: getPermalink('/#environment'),
     },
     {
-      text: 'Download',
+      text: 'Sensor Suite',
+      href: getPermalink('/#sensors'),
+    },
+    {
+      text: 'Data Structure',
+      href: getPermalink('/#steps'),
+    },
+    {
+      text: 'Toolkit',
       href: getPermalink('/#steps'),
     },
     {

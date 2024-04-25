@@ -20,11 +20,11 @@ export const headerData = {
     },
     {
       text: 'Data Structure',
-      href: getPermalink('/#steps'),
+      href: getPermalink('/#structure'),
     },
     {
       text: 'Toolkit',
-      href: getPermalink('/#steps'),
+      href: getPermalink('/#toolkit'),
     },
     {
       text: 'FAQs',

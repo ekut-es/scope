@@ -127,58 +127,10 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    id="content"
-    isReversed
-    tagline=""
-    title="SCOPE: The most comprehensive collective perception dataset out there!!! "
-    items={[
-      {
-        title: 'Sensor Carriers',
-        description:
-          'The sensor suite is mounted on a varying number of connected and automated vehicles (CAVs) and Roadside Units (RSUs) per scenario',
-          icon: 'tabler:car',
-      },
-      {
-        title: 'RGB Cameras',
-        description:
-          'Five RGB cameras to provide stereo images as well as a 360° surround view with a resolution of 1920x1080 px',
-          icon: 'tabler:camera',
-      },
-      {
-        title: 'Semantic Segmentation Cameras',
-        description:
-          'Five semantic segmentation with same specificataion as RGB cameras',
-          icon: 'tabler:photo-filled',
-      },
-      {
-        title: '32 and 64-layer 360° LiDARs',
-        description:
-          'Realistic LiDAR sensor model imitating the Velodyne VLP32 and HDL64',
-          icon: 'tabler:360-view',
-      },
-      {
-        title: 'Solid State LiDAR',
-        description:
-          'SCOPE is the first dataset that integrates a solid state LiDAR. We use a Blickfeld CUBE model.',
-          icon: 'tabler:3d-cube-sphere',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/SensorSetup_rotated.jpg',
-      alt: 'Colorful Image'
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sensor Suite</h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <Content
-    isAfterContent
+  id="content"
+  isReversed
+  tagline=""
+  title="SCOPE: The most comprehensive collective perception dataset out there!!! "
     items={[
       {
         title: 'Diverse scenarios',
@@ -257,6 +209,142 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Environmental Conditions</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    isReversed
+    items={[
+      {
+        title: 'Sensor Carriers',
+        description:
+          'The sensor suite is mounted on a varying number of connected and automated vehicles (CAVs) and Roadside Units (RSUs) per scenario',
+          icon: 'tabler:car',
+      },
+      {
+        title: 'RGB Cameras',
+        description:
+          'Five RGB cameras to provide stereo images as well as a 360° surround view with a resolution of 1920x1080 px',
+          icon: 'tabler:camera',
+      },
+      {
+        title: 'Semantic Segmentation Cameras',
+        description:
+          'Five semantic segmentation with same specificataion as RGB cameras',
+          icon: 'tabler:photo-filled',
+      },
+      {
+        title: '32 and 64-layer 360° LiDARs',
+        description:
+          'Realistic LiDAR sensor model imitating the Velodyne VLP32 and HDL64',
+          icon: 'tabler:360-view',
+      },
+      {
+        title: 'Solid State LiDAR',
+        description:
+          'SCOPE is the first dataset that integrates a solid state LiDAR. We use a Blickfeld CUBE model.',
+          icon: 'tabler:3d-cube-sphere',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/SensorSetup_rotated.jpg',
+      alt: 'Colorful Image'
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sensor Suite</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Times of Day',
+        description:
+          'SCOPE different times of day including night time which affects camera-based object detection',
+          icon: 'tabler:moon',
+      },
+      {
+        title: 'Weather Conditions',
+        description:
+          'Three varying intensities for rain and fog',
+          icon: 'tabler:cloud-rain',
+      },
+      {
+        title: 'Image Augmentation',
+        description:
+          'Realistic and physically-accurate rendering of falling rain, raindrops on windshield and fog for image data',
+          icon: 'tabler:camera',
+      },
+      {
+        title: 'Point Cloud Augmentation',
+        description:
+          'Realistic models to augment point clouds to achieve weather-affected LiDAR data',
+          icon: 'tabler:360-view',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/Weather-sim.png',
+      alt: 'scenarios',
+      
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Data Structure</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    isReversed
+    items={[
+      {
+        title: 'Times of Day',
+        description:
+          'SCOPE different times of day including night time which affects camera-based object detection',
+          icon: 'tabler:moon',
+      },
+      {
+        title: 'Weather Conditions',
+        description:
+          'Three varying intensities for rain and fog',
+          icon: 'tabler:cloud-rain',
+      },
+      {
+        title: 'Image Augmentation',
+        description:
+          'Realistic and physically-accurate rendering of falling rain, raindrops on windshield and fog for image data',
+          icon: 'tabler:camera',
+      },
+      {
+        title: 'Point Cloud Augmentation',
+        description:
+          'Realistic models to augment point clouds to achieve weather-affected LiDAR data',
+          icon: 'tabler:360-view',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/Weather-sim.png',
+      alt: 'scenarios',
+      
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Toolkit</h3>
     </Fragment>
 
     <Fragment slot="bg">

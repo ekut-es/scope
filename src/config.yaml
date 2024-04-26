@@ -1,5 +1,5 @@
 site:
-  name: Scope
+  name: SCOPE
   site: 'https://ekut-es.github.io'
   base: '/scope'
   trailingSlash: false

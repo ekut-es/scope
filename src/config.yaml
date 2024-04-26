@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Scope
-    template: '%s — Scope'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: SCOPE
+    template: '%s — SCOPE'
+  description: "A Synthetic Multi-Modal Dataset for Collective Perception Including Physical-Correct Weather Conditions."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Scope Dataset
+    site_name: SCOPE Dataset
     images:
       - url: '~/assets/images/default.png'
         width: 1200

@@ -19,7 +19,7 @@ export const headerData = {
       href: getPermalink('/#sensors'),
     },
     {
-      text: 'Data Structure',
+      text: 'Structure',
       href: getPermalink('/#structure'),
     },
     {

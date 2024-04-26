@@ -11,7 +11,7 @@ export const headerData = {
       href: getPermalink('/#scenarios')
     },
     {
-      text: 'Environmental Conditions',
+      text: 'Weather',
       href: getPermalink('/#environment'),
     },
     {

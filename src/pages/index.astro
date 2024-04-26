@@ -62,15 +62,10 @@ const metadata = {
       
     ]}
   >
-    <!-- <Fragment slot="title">
-      SCOPE <span class="hidden xl:inline">Dataset</span>
-    </Fragment>-->
-
     <Fragment slot="title">
       <span class="hidden xl:inline">
         <span class="font-semibold"></span> A Synthetic Multi-Modal Dataset for Collective Perception Including Physical-Correct Weather Conditions
-        </span
-      >
+        </span>
       <span class="block mb-1 sm:hidden font-bold text-blue-600"></span>
     </Fragment>
   </Hero3>
@@ -80,27 +75,27 @@ const metadata = {
   isReversed
     items={[
       {
-        title: 'Diverse scenarios',
+        title: 'Diverse Scenarios',
         description:
-          'SCOPE includes over 40 diverse scenarios including urban, suburban, rural and highway environments',
+          'Over 40 diverse scenarios in urban, suburban, rural and highway environments',
           icon: 'tabler:road',
       },
       {
         title: 'Two Novel Maps',
         description:
-          'Two novel maps from Karlsruhe and Tübingen (Germany), providing a realistic driving environment',
+          'Two novel digital-twin maps from Karlsruhe and Tübingen (Germany) for a more realistic environment',
           icon: 'tabler:map',
       },
       {
         title: 'Diverse Road Users',
         description:
-          'SCOPE is the only dataset including not only cars and vans but also motorcyclists, cyclists and pedestrians',
+          'First synthetic collective perception dataset including not only cars, vans, motorcyclists but also cyclists and pedestrians',
           icon: 'tabler:bike',
       },
       {
         title: 'Edge Case Scenarios',
         description:
-          'Edge cases like roundabouts and tunnel sections are part of SCOPE',
+          'Edge cases like a roundabout or a tunnel sections to allow for a comprehensive evaluation',
           icon: 'tabler:arrow-roundabout-left',
       },
     ]}
@@ -126,25 +121,25 @@ const metadata = {
       {
         title: 'Times of Day',
         description:
-          'SCOPE different times of day including night time which affects camera-based object detection',
+          'Recordings on different times of day including night time',
           icon: 'tabler:moon',
       },
       {
         title: 'Weather Conditions',
         description:
-          'Three varying intensities for rain and fog',
+          'Three varying intensities for rain and fog to allow for an evaluation under adverse weather',
           icon: 'tabler:cloud-rain',
       },
       {
         title: 'Image Augmentation',
         description:
-          'Realistic and physically-accurate rendering of falling rain, raindrops on windshield and fog for image data',
+          'Realistic and physically-accurate rendering of falling rain with raindrops on windshield and fog on image data',
           icon: 'tabler:camera',
       },
       {
         title: 'Point Cloud Augmentation',
         description:
-          'Realistic models to augment point clouds to achieve weather-affected LiDAR data',
+          'Realistic models to augment point clouds to simulate weather-affected LiDAR data',
           icon: 'tabler:360-view',
       },
     ]}
@@ -177,25 +172,25 @@ const metadata = {
       {
         title: 'RGB Cameras',
         description:
-          'Five RGB cameras to provide stereo images as well as a 360° surround view with a resolution of 1920x1080 px',
+          'Five RGB cameras provide stereo images as well as a 360° surround view with a resolution of 1920x1080 px',
           icon: 'tabler:camera',
       },
       {
         title: 'Semantic Segmentation Cameras',
         description:
-          'Five semantic segmentation with same specificataion as RGB cameras',
+          'Five semantic segmentation cameras with same specificataion as for the RGB cameras',
           icon: 'tabler:photo-filled',
       },
       {
         title: '32 and 64-layer 360° LiDARs',
         description:
-          'Realistic LiDAR sensor model imitating the Velodyne VLP32 and HDL64',
+          'Realistic LiDAR sensor model for 32-layer and 64-layer 360° LiDAR (Velodyne VLP32 and HDL64)',
           icon: 'tabler:360-view',
       },
       {
         title: 'Solid State LiDAR',
         description:
-          'SCOPE is the first dataset that integrates a solid state LiDAR. We use a Blickfeld CUBE model.',
+          'First dataset integrating a solid state LiDAR (Blickfeld CUBE)',
           icon: 'tabler:3d-cube-sphere',
       },
     ]}
@@ -228,25 +223,25 @@ const metadata = {
       {
         title: 'Data Hierarchy',
         description:
-          'SCOPE is hierarchically structured with sensor data per vehicle per scenario',
+          'Hierarchically structured sensor data and transformation matrices per vehicle per scenario',
           icon: 'tabler:hierarchy-3',
       },
       {
         title: 'Coordinate Transforms',
         description:
-          'Easy Coordinate Transformation with already given transformation matrices for each vehicle',
+          'Easy coordinate transformation with already given transformation matrices for each vehicle and sensor',
           icon: 'tabler:gizmo',
       },
       {
         title: 'File Formats',
         description:
-          'Common formats as .bin, .txt, and .png for easy and efficient data loading',
+          'Common fiel formats such as .bin, .txt, and .png for an easy and efficient data loading',
           icon: 'tabler:file-3d',
       },
     ]}
     image={{
       src: '~/assets/images/data-structure-gray.png',
-      alt: 'scenarios',
+      alt: 'File Hierarchy of SCOPE',
       
     }}
   >
@@ -285,13 +280,13 @@ const metadata = {
       {
         title: 'Data Loading',
         description:
-          'Provided dataset class for efficient training and testing in pytorch',
+          'Provided dataset class for efficient training and testing in PyTorch',
           icon: 'tabler:rotate-clockwise-2',
       },
       {
         title: 'Evaluation',
         description:
-          'Provided evaluation for easy and fair comparison of different methods',
+          'Evaluation module for easy and fair comparison of different methods using state-of-the-art metrics',
           icon: 'tabler:rectangular-prism',
       },
     ]}
@@ -324,22 +319,22 @@ const metadata = {
       {
         title: 'Why should I use SCOPE?',
         description:
-          "SCOPE is the most comprehensive synthetic collective perception dataset. It is the only dataset with realistic LiDAR sensor models and weather simulation. Moreover, in contrast to various other dataset vulnerable road users are included.",
+          "SCOPE is the most comprehensive synthetic collective perception dataset. It is the first dataset with realistic LiDAR sensor models including a solid state LiDAR and weather simulations for camera and LiDAR. Moreover, in contrast to other publicly available datasets vulnerable road users are included.",
       },
       {
         title: 'How many frames does SCOPE consist of?',
         description:
-          "SCOPE contains of 44 scenarios with four environmental conditions each, and a scenario length of 100 frames. This results in a total of 17,600 frames.",
+          "SCOPE consists of 44 scenarios with a scenario length of 100 frames (10s) with four environmental conditions each. This results in a total of 17,600 frames.",
       },
       {
-        title: 'What collaborative agents exist?',
+        title: 'What is the Train/Test Split?',
         description:
-          'For collaborative agents road-side units (RSUs) and connected and automated vehicles (CAVs) are present.',
+          'SCOPE consists of 12,320 frames for training, 1,760 frames for validation and 3,520 frames for testing.',
       },
       {
         title: 'How many sensors/vehicles are present in the dataset?',
         description:
-          "The scenarios contain up to 24 collaborative agents (20 CAVs + 4 RSUs) and up to 60 further vehicles as passive traffic.",
+          "Vehicles and Roadside Untis are equipped with sensors. The scenarios contain up to 24 collaborative agents (20 CAVs + 4 RSUs) and up to 60 further road users as passive traffic.",
       },
       {
         title: "Who created SCOPE?",

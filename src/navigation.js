@@ -31,7 +31,7 @@ export const headerData = {
       href: getPermalink('/#faqs'),
     },
   ],
-  actions: [{ text: 'Download', href: 'https://es-cloud.cs.uni-tuebingen.de/d/6f3ff57206ea4f9dbfee/', target: '_blank' }],
+  actions: [{ text: 'Download', href: 'https://es-cloud.cs.uni-tuebingen.de/d/05d6ed2ea93f4c73a057/', target: '_blank' }],
 };
 
 export const footerData = {
